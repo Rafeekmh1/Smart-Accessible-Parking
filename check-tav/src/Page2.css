@@ -1,0 +1,31 @@
+.Page2 {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: right; /* Right-aligned text for Hebrew */
+  direction: rtl; /* Right-to-left direction for Hebrew text */
+}
+
+.Page2 h1,
+.Page2 h2 {
+  text-align: right; /* Right-align headings */
+  color: #333;
+}
+
+.Page2 p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.Page2 ul {
+  list-style-type: disc;
+  padding-right: 20px; /* Add padding to the right for list items */
+  margin: 10px 0;
+}
+
+.Page2 ul li {
+  margin-bottom: 10px;
+}

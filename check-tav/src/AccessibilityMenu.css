@@ -1,0 +1,114 @@
+/* AccessibilityMenu.css */
+.accessibility-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.accessibility-button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accessibility-button i {
+  margin-right: 8px;
+}
+
+.accessibility-button:hover {
+  background-color: #218838;
+}
+
+.accessibility-options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.accessibility-menu.open .accessibility-options {
+  max-height: 500px; /* Adjust based on the content */
+  opacity: 1;
+}
+
+.accessibility-option {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.accessibility-option:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.high-contrast {
+  filter: invert(100%);
+}
+
+.accessibility-button i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.accessibility-button:hover i {
+  color: #e2e2e2;
+}
+
+/* Smooth transition for background and hover effects */
+.accessibility-button,
+select {
+  transition: all 0.3s ease;
+}
+
+/* Improved button and select styling */
+.accessibility-button {
+  font-size: 15px;
+  padding: 10px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
